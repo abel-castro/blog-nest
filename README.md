@@ -5,7 +5,7 @@ The purpose of this project is to learn how to work with [nestjs](https://nestjs
 Project features:
 - REST-API
 - Mikro-ORM
-- POstgresSQL DB running in Docker
+- PostgresSQL DB running in Docker
 - Swagger API docs 
 
 ## Installation
