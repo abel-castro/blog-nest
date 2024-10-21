@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "NodeNext",
+    "target": "ESNEXT",
     "declaration": true,
     "removeComments": true,
     "esModuleInterop": true,

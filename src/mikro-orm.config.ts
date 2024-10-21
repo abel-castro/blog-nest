@@ -9,14 +9,17 @@ import { EntityGenerator } from '@mikro-orm/entity-generator';
 import { SeedManager } from '@mikro-orm/seeder';
 import { defineConfig } from '@mikro-orm/postgresql';
 
-
-export default defineConfig({
+export const commonMikroOrmConfig = {
   port: 5432,
   user: 'blog_user',
   password: 'blog_password',
   dbName: 'blog_db',
+  driver: PostgreSqlDriver,
   entities: [Post],
   debug: true,
+};
+export default defineConfig({
+  ...commonMikroOrmConfig,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,
   // @ts-expect-error nestjs adapter option
